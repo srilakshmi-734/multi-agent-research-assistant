@@ -48,19 +48,19 @@ Final Output (with optional regeneration)
 
 multi_agent_web/
 │
-├── app.py # Flask application
-├── planner.py # Planner agent
-├── writer.py # Writer agent
-├── verifier.py # Verifier agent
-├── hf_model.py # Hugging Face integration
+├── app.py
+├── planner.py
+├── writer.py
+├── verifier.py
+├── hf_model.py
 ├── requirements.txt
-├── outputs.json # Log file
+├── outputs.json
 │
 ├── templates/
-│ └── index.html # Frontend HTML
+│ └── index.html
 │
 └── static/
-└── style.css # Styling
+└── style.css
 
 
 ---
