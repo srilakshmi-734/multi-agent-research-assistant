@@ -44,7 +44,7 @@ Final Output (with optional regeneration)
 
 ---
 
-##  Project Structure
+## Project Structure
 
 multi_agent_web/
 │
@@ -57,13 +57,11 @@ multi_agent_web/
 ├── outputs.json
 │
 ├── templates/
-│ └── index.html
+│   └── index.html
 │
 └── static/
-└── style.css
-
-
----
+    └── style.css
+```
 
 ##  How It Works
 
