@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Agent Academic Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Multi-Agent Research Assistant</h1>
+
+    <form method="POST">
+        <textarea name="question" placeholder="Enter your academic question..." required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if query %}
+    <div class="result">
+        <h2>User Question</h2>
+        <p>{{ query }}</p>
+
+        <h2>Planner Output</h2>
+        <pre>{{ plan }}</pre>
+
+        <h2>Writer Output</h2>
+        <pre>{{ answer }}</pre>
+
+        <h2>Verifier Output</h2>
+        <pre>{{ verification }}</pre>
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
